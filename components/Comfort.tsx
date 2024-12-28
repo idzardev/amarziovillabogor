@@ -10,7 +10,7 @@ const ComfortSection = () => {
     Autoplay({ delay: 2500, stopOnInteraction: true })
   );
   return (
-    <section className="bg-[#183621] h-screen w-full">
+    <section className="bg-[#183621] min-h-screen w-full">
       <Image
         src={"/assets/images/pattern/pattern.png"}
         alt="Pattern"
@@ -18,7 +18,7 @@ const ComfortSection = () => {
         height={1080}
         className="absolute w-full h-screen object-cover z-0 mix-blend-multiply"
       />
-      <div className="container h-full flex items-center max-w-7xl mx-auto px-4 lg:px-0">
+      <div className="container h-screen flex items-center max-w-7xl mx-auto px-4 lg:px-0">
         <div className="flex flex-col justify-center items-center w-full gap-4">
           <h2 className="font-ppeditorialnew text-4xl lg:text-6xl text-[#EFF0DE] font-thin tracking-[0.5px] text-center">
             Comfort with a <span className="italic">View</span>
