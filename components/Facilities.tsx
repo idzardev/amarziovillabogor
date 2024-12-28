@@ -81,7 +81,7 @@ const FacilitiesSection = () => {
             <Dialog>
               <DialogTrigger className="flex items-center justify-center py-4 bg-[#EFF0DE] text-[#43392F] rounded-sm hover:shadow-sm transition duration-300 ease-in-out">
                 <Image
-                  src="/assets/icon/facilities/Grill.svg"
+                  src="/assets/icon/facilities/grill.svg"
                   alt="grill"
                   width={40}
                   height={40}
@@ -91,7 +91,7 @@ const FacilitiesSection = () => {
                 <DialogHeader className="text-start">
                   <DialogTitle className="text-xl font-ppeditorialnew font-medium text-[#43392F] flex flex-col gap-4">
                     <Image
-                      src="/assets/icon/facilities/Grill.svg"
+                      src="/assets/icon/facilities/grill.svg"
                       alt="grill"
                       width={40}
                       height={40}
@@ -108,7 +108,7 @@ const FacilitiesSection = () => {
             <Dialog>
               <DialogTrigger className="flex items-center justify-center py-4 bg-[#EFF0DE] text-[#43392F] rounded-sm hover:shadow-sm transition duration-300 ease-in-out">
                 <Image
-                  src="/assets/icon/facilities/Knifeandfork.svg"
+                  src="/assets/icon/facilities/knifeandfork.svg"
                   alt="knifeandfork"
                   width={40}
                   height={40}
@@ -118,7 +118,7 @@ const FacilitiesSection = () => {
                 <DialogHeader className="text-start">
                   <DialogTitle className="text-xl font-ppeditorialnew font-medium text-[#43392F] flex flex-col gap-4">
                     <Image
-                      src="/assets/icon/facilities/Knifeandfork.svg"
+                      src="/assets/icon/facilities/knifeandfork.svg"
                       alt="knifeandfork"
                       width={40}
                       height={40}
@@ -162,7 +162,7 @@ const FacilitiesSection = () => {
             <Dialog>
               <DialogTrigger className="flex items-center justify-center py-4 bg-[#EFF0DE] text-[#43392F] rounded-sm hover:shadow-sm transition duration-300 ease-in-out">
                 <Image
-                  src="/assets/icon/facilities/Pool.svg"
+                  src="/assets/icon/facilities/pool.svg"
                   alt="pool"
                   width={40}
                   height={40}
@@ -172,7 +172,7 @@ const FacilitiesSection = () => {
                 <DialogHeader className="text-start">
                   <DialogTitle className="text-xl font-ppeditorialnew font-medium text-[#43392F] flex flex-col gap-4">
                     <Image
-                      src="/assets/icon/facilities/Pool.svg"
+                      src="/assets/icon/facilities/pool.svg"
                       alt="pool"
                       width={40}
                       height={40}
@@ -189,7 +189,7 @@ const FacilitiesSection = () => {
             <Dialog>
               <DialogTrigger className="flex items-center justify-center py-4 bg-[#EFF0DE] text-[#43392F] rounded-sm hover:shadow-sm transition duration-300 ease-in-out col-span-2">
                 <Image
-                  src="/assets/icon/facilities/Car.svg"
+                  src="/assets/icon/facilities/car.svg"
                   alt="car"
                   width={40}
                   height={40}
@@ -199,7 +199,7 @@ const FacilitiesSection = () => {
                 <DialogHeader className="text-start">
                   <DialogTitle className="text-xl font-ppeditorialnew font-medium text-[#43392F] flex flex-col gap-4">
                     <Image
-                      src="/assets/icon/facilities/Car.svg"
+                      src="/assets/icon/facilities/car.svg"
                       alt="car"
                       width={40}
                       height={40}
