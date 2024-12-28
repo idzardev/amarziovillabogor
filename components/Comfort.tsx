@@ -16,7 +16,7 @@ const ComfortSection = () => {
         alt="Pattern"
         width={1920}
         height={1080}
-        className="absolute w-full h-full object-cover z-0 mix-blend-multiply"
+        className="absolute w-full h-screen object-cover z-0 mix-blend-multiply"
       />
       <div className="container h-full flex items-center max-w-7xl mx-auto px-4 lg:px-0">
         <div className="flex flex-col justify-center items-center w-full gap-4">

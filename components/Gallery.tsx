@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Gallery = () => {
+const GallerySection = () => {
   return (
-    <div>
+    <section>
       
-    </div>
+    </section>
   )
 }
 
-export default Gallery
+export default GallerySection
