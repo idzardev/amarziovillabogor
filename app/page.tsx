@@ -1,7 +1,16 @@
+import React from "react";
+import ComfortSection from "@/components/Comfort";
+import HeroSection from "@/components/Hero";
+import LuxurySection from "@/components/Luxury";
+import FacilitiesSection from "@/components/Facilities";
+
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center">
-      <h1>Welcome to Amarziovillabogor</h1>
-    </div>
+    <main>
+      <HeroSection />
+      <LuxurySection />
+      <ComfortSection />
+      <FacilitiesSection />
+    </main>
   );
 }
