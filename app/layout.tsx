@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const satoshi = localFont({
   src: [
@@ -58,10 +59,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${satoshi.variable} ${ppEditorialNew.variable} antialiased bg-[#EFF0DE]`}
+        className={`${satoshi.variable} ${ppEditorialNew.variable} antialiased`}
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

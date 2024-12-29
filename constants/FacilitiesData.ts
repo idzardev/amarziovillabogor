@@ -1,0 +1,51 @@
+export const FacilitiesData = [
+  {
+    id: 1,
+    title: "5 Spacious Bedrooms",
+    description: "Cozy and comfortable rooms for a great night's sleep.",
+    image: "/bed.svg",
+    picture: "/assets/images/facilitiesPage/img1.avif",
+  },
+  {
+    id: 2,
+    title: "6 Bathrooms",
+    description: "Clean and modern bathrooms for your convenience.",
+    image: "/shower.svg",
+    picture: "/assets/images/facilitiesPage/img2.avif",
+  },
+  {
+    id: 3,
+    title: "Outdoor & BBQ Area",
+    description: "Perfect for outdoor meals and barbecues.",
+    image: "/grill.svg",
+    picture: "/assets/images/facilitiesPage/img3.avif",
+  },
+  {
+    id: 4,
+    title: "Modern Kitchen",
+    description: "Everything you need to cook your favorite meals.",
+    image: "/knifeandfork.svg",
+    picture: "/assets/images/facilitiesPage/img4.avif",
+  },
+  {
+    id: 5,
+    title: "Billiard Room",
+    description: "Have fun with a game of billiards.",
+    image: "/billiardball.svg",
+    picture: "/assets/images/facilitiesPage/img5.avif",
+  },
+  {
+    id: 6,
+    title: "Private Swimming Pool",
+    description: "A refreshing pool all to yourself.",
+    image: "/pool.svg",
+    picture: "/assets/images/facilitiesPage/img6.avif",
+  },
+  {
+    id: 7,
+    title: "Parking Space",
+    description: "Safe and convenient parking for your vehicle.",
+    image: "/car.svg",
+    picture: "/assets/images/facilitiesPage/img7.avif",
+  },
+];

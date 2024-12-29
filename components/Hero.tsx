@@ -50,7 +50,7 @@ const HeroSection = () => {
         className="absolute w-full h-screen object-cover z-0 mix-blend-multiply"
       />
       {/* Static Content - Outside Carousel */}
-      <div className="absolute inset-0 z-10 pt-32">
+      <div className="absolute inset-0 z-10 pt-40">
         <div className="relative px-10 h-screen flex flex-col justify-center max-w-7xl mx-auto">
           <div className="max-w-2xl space-y-6">
             <h1 className="text-5xl text-center md:text-start font-ppeditorialnew font-thin tracking-[0.5px] text-[#EFF0DE]">

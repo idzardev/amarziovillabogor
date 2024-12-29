@@ -2,15 +2,23 @@ import React from "react";
 import ComfortSection from "@/components/Comfort";
 import HeroSection from "@/components/Hero";
 import LuxurySection from "@/components/Luxury";
-import FacilitiesSection from "@/components/Facilities";
+import FacilitySection from "@/components/Facility";
+import GallerySection from "@/components/Gallery";
+import TestimonialSection from "@/components/Testimonial";
+import BookSection from "@/components/Book";
+import ContactSection from "@/components/Contact";
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-[#FBF9EC]">
       <HeroSection />
       <LuxurySection />
       <ComfortSection />
-      <FacilitiesSection />
+      <FacilitySection />
+      <GallerySection />
+      <TestimonialSection />
+      <BookSection />
+      <ContactSection />
     </main>
   );
 }
