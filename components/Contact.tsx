@@ -10,50 +10,37 @@ import {
 } from "./ui/dialog";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import { ContactLinks } from "@/constants/ContactData";
 
 const ContactSection = () => {
   return (
     <section className="bg-[#FBF9EC] h-full w-full py-16">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 h-full items-center max-w-7xl mx-auto px-8 lg:px-0">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 h-full items-center max-w-7xl mx-auto px-0">
         <div className="flex flex-col justify-center items-center w-full gap-8">
           <h2 className="font-ppeditorialnew text-4xl lg:text-6xl text-[#43392F] font-thin tracking-[0.5px]">
             Contact Us
           </h2>
-          <div className="flex flex-col items-center gap-2">
-            <div className="flex items-center gap-4 w-full">
-              <Image src="/phone.svg" alt="Phone" width={24} height={24} />
-              <span className="text-[#43392F] font-satoshi text-lg">
-                +62 819 3687 2903
-              </span>
-            </div>
-            <div className="flex items-center gap-4 w-full">
-              <Image src="/gmail.svg" alt="Gmail" width={24} height={24} />
-              <span className="text-[#43392F] font-satoshi text-lg">
-                amarziovillabogor@gmail.com
-              </span>
-            </div>
-            <div className="flex items-center gap-4 w-full">
-              <Image
-                src="/instagram.svg"
-                alt="Instagram"
-                width={24}
-                height={24}
-              />
-              <span className="text-[#43392F] font-satoshi text-lg">
-                amarziovillabogor
-              </span>
-            </div>
-            <div className="flex items-center gap-4 w-full">
-              <Image
-                src="/location.svg"
-                alt="Location"
-                width={24}
-                height={24}
-              />
-              <span className="text-[#43392F] font-satoshi text-lg">
-                Jalan Siliwangi, Kampung Pasir Madin Kavling, Cisarua, Bogor.
-              </span>
-            </div>
+          <div className="flex flex-col items-center gap-2 px-8">
+            {ContactLinks.map((link) => (
+              <div key={link.name} className="flex items-center gap-4 w-full">
+                <Link
+                  href={link.link}
+                  key={link.name}
+                  className="flex items-center gap-3 font-satoshi text-lg font-light tracking-wider text-[#43392F]"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src={link.icon}
+                    alt={link.name}
+                    width={24}
+                    height={24}
+                    className="flex-shrink-0 text-[#43392F]"
+                  />
+                  {link.title}
+                </Link>
+              </div>
+            ))}
           </div>
           <div>
             <Dialog>

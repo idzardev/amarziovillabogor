@@ -13,11 +13,11 @@ import {
   SheetTrigger,
 } from "./ui/sheet";
 import { Button } from "./ui/button";
-import { IoCallOutline, IoClose, IoLocationOutline } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
 import { HiMenu } from "react-icons/hi";
-import { MdOutlineEmail } from "react-icons/md";
-import { FaInstagram } from "react-icons/fa";
 import { Separator } from "./ui/separator";
+import { ContactLinks } from "@/constants/ContactData";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -67,7 +67,7 @@ const Navbar = () => {
         ))}
       </div>
       <Link href="/">
-        <span className="text-[#EFF0DE] text-base font-extralight tracking-widest lg:text-4xl font-ppeditorialnew lg:pr-20">
+        <span className="text-[#EFF0DE] text-base font-extralight tracking-[3px] lg:text-4xl font-ppeditorialnew lg:pr-20">
           AMARZIO VILLA
         </span>
       </Link>
@@ -103,7 +103,7 @@ const Navbar = () => {
             </SheetTitle>
           </SheetHeader>
           <Link href="/">
-            <span className="text-[#EFF0DE] text-base font-extralight tracking-widest font-ppeditorialnew">
+            <span className="text-[#EFF0DE] text-base font-extralight tracking-[3px] font-ppeditorialnew">
               AMARZIO VILLA
             </span>
           </Link>
@@ -132,35 +132,24 @@ const Navbar = () => {
 
             <div className="space-y-4 text-sm">
               <h3 className="text-xl font-satoshi mb-4">Contact Us</h3>
-              <Link
-                href="tel:+6281936872903"
-                className="flex items-center gap-3 font-satoshi font-light tracking-wider"
-              >
-                <IoCallOutline className="text-xl" />
-                +62 819 3687 2903
-              </Link>
-              <Link
-                href="mailto:amarziovillabogor@gmail.com"
-                className="flex items-center gap-3 font-satoshi font-light tracking-wider"
-              >
-                <MdOutlineEmail className="text-xl" />
-                amarziovillabogor@gmail.com
-              </Link>
-              <Link
-                href="https://instagram.com/amarziovillabogor"
-                className="flex items-center gap-3 font-satoshi font-light tracking-wider"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaInstagram className="text-xl" />
-                amarziovillabogor
-              </Link>
-              <div className="flex items-start gap-3">
-                <IoLocationOutline className="text-xl flex-shrink-0 mt-1" />
-                <span className="font-satoshi font-light tracking-wider">
-                  Jalan Siliwangi, Kampung Pasir Madin Kavling, Cisarua, Bogor.
-                </span>
-              </div>
+              {ContactLinks.map((link) => (
+                <Link
+                  href={link.link}
+                  key={link.name}
+                  className="flex items-center gap-3 font-satoshi font-light tracking-wider text-[#EFF0DE]"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src={link.icon}
+                    alt={link.name}
+                    width={24}
+                    height={24}
+                    className="flex-shrink-0 contact-icon"
+                  />
+                  {link.title}
+                </Link>
+              ))}
             </div>
           </div>
         </SheetContent>

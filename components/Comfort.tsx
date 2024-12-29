@@ -1,14 +1,30 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
-import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
+import React, { useState } from "react";
 import Autoplay from "embla-carousel-autoplay";
+import useEmblaCarousel from "embla-carousel-react";
 
 const ComfortSection = () => {
-  const plugin = React.useRef(
-    Autoplay({ delay: 2500, stopOnInteraction: true })
-  );
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
+    Autoplay({ delay: 2500, stopOnInteraction: true }),
+  ]);
+
+  React.useEffect(() => {
+    if (emblaApi) {
+      emblaApi.on("select", () => {
+        setActiveIndex(emblaApi.selectedScrollSnap());
+      });
+    }
+  }, [emblaApi]);
+
+  const images = Array.from({ length: 5 }).map((_, index) => ({
+    src: `/assets/images/comfort/comfort${index + 1}.avif`,
+    alt: `Comfort image ${index + 1}`,
+  }));
+
   return (
     <section className="bg-[#183621] min-h-screen w-full">
       <Image
@@ -18,7 +34,7 @@ const ComfortSection = () => {
         height={1080}
         className="absolute w-full h-screen object-cover z-0 mix-blend-multiply"
       />
-      <div className="container h-screen flex items-center max-w-7xl mx-auto px-8 lg:px-0">
+      <div className="container h-screen flex items-center max-w-7xl mx-auto px-4 lg:px-0">
         <div className="flex flex-col justify-center items-center w-full gap-4">
           <h2 className="font-ppeditorialnew text-4xl lg:text-6xl text-[#EFF0DE] font-thin tracking-[0.5px] text-center z-10">
             Comfort with a <span className="italic">View</span>
@@ -29,28 +45,38 @@ const ComfortSection = () => {
             your room: the sparkling blue pool, lush green gardens, and stunning
             mountains. Make every moment unforgettable!
           </p>
-          <Carousel
-            plugins={[plugin.current]}
-            className="w-full max-w-xs pt-10"
-            onMouseEnter={plugin.current.stop}
-            onMouseLeave={plugin.current.reset}
-          >
-            <CarouselContent>
-              {Array.from({ length: 5 }).map((_, index) => (
-                <CarouselItem key={index}>
-                  <div>
+          <div className="relative w-full max-w-sm pt-8">
+            <div className="overflow-hidden" ref={emblaRef}>
+              <div className="flex">
+                {images.map((image, index) => (
+                  <div
+                    key={index}
+                    className="flex-[0_0_100%] min-w-0 relative aspect-[1/1]"
+                  >
                     <Image
-                      src={`/assets/images/comfort/comfort${index + 1}.avif`}
-                      alt="comfort"
-                      width={1000}
-                      height={1000}
-                      className="object-cover rounded-sm"
+                      src={image.src}
+                      alt={image.alt}
+                      width={400}
+                      height={400}
+                      className="object-cover w-full h-full"
                     />
                   </div>
-                </CarouselItem>
+                ))}
+              </div>
+            </div>
+            <div className="flex justify-center gap-2 mt-4">
+              {images.map((_, index) => (
+                <div
+                  key={index}
+                  onClick={() => emblaApi && emblaApi.scrollTo(index)}
+                  className={`size-3 rounded-full transition-colors duration-300 ${
+                    index === activeIndex ? "bg-[#FEF9EC]" : "bg-[#FEF9EC]/30"
+                  }`}
+                  aria-label={`Go to slide ${index + 1}`}
+                />
               ))}
-            </CarouselContent>
-          </Carousel>
+            </div>
+          </div>
         </div>
       </div>
     </section>
