@@ -30,14 +30,14 @@ const GallerySection = () => {
   return (
     <section className="h-full w-full py-12">
       <div className="h-full flex flex-col items-center max-w-7xl mx-auto px-4 lg:px-0 gap-6">
-        <h2 className="text-4xl lg:text-5xl font-ppeditorialnew font-thin tracking-[0.5px] text-[#43392F]">
+        <h2 className="text-4xl lg:text-6xl font-ppeditorialnew font-thin tracking-[0.5px] pt-8">
           Gallery of <span className="italic">Moments</span>
         </h2>
-        <p className="text-sm lg:text-base font-medium font-satoshi text-[#43392F] tracking-[0.5px] text-center">
+        <p className="font-satoshi text-sm md:text-xl lg:text-base text-[#43392F] text-center max-w-2xl mx-auto z-10 font-medium">
           Explore our villa, from cozy interiors to stunning outdoor views. Each
           corner is designed to make your stay unforgettable.
         </p>
-        <div className="relative w-full max-w-sm pt-8">
+        <div className="relative w-full max-w-sm md:max-w-lg pt-8">
           <div className="overflow-hidden" ref={emblaRef}>
             <div className="flex">
               {images.map((image, index) => (
@@ -71,7 +71,7 @@ const GallerySection = () => {
         </div>
         <Link
           href="/gallery"
-          className="mt-4 font-satoshi font-medium text-sm bg-[#EFF0DE] text-[#43392F] hover:bg-[#43392F] hover:text-[#EFF0DE] transition-colors duration-300 px-6 py-2.5 rounded-none flex items-center gap-1.5"
+          className="mt-4 font-satoshi font-medium text-sm bg-[#EFF0DE] text-[#43392F] hover:bg-[#43392F] hover:text-[#EFF0DE] transition-colors duration-300 px-6 py-3 rounded-none flex items-center gap-2 md:text-xl md:px-8 md:py-3 lg:px-6 lg:py-3 lg:text-base"
         >
           See more <ArrowUpRight className="size-4" />
         </Link>

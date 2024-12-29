@@ -26,7 +26,7 @@ const ComfortSection = () => {
   }));
 
   return (
-    <section className="bg-[#183621] min-h-screen w-full">
+    <section className="bg-[#183621] h-screen w-full">
       <Image
         src={"/assets/images/pattern/pattern.png"}
         alt="Pattern"
@@ -34,18 +34,18 @@ const ComfortSection = () => {
         height={1080}
         className="absolute w-full h-screen object-cover z-0 mix-blend-multiply"
       />
-      <div className="container h-screen flex items-center max-w-7xl mx-auto px-4 lg:px-0">
-        <div className="flex flex-col justify-center items-center w-full gap-4">
-          <h2 className="font-ppeditorialnew text-4xl lg:text-6xl text-[#EFF0DE] font-thin tracking-[0.5px] text-center z-10">
+      <div className="h-screen flex items-center max-w-7xl mx-auto px-4 lg:px-0">
+        <div className="flex flex-col justify-center items-center w-full gap-4 md:gap-6 lg:gap-4">
+          <h2 className="font-ppeditorialnew text-4xl md:text-6xl lg:text-5xl text-[#EFF0DE] font-thin tracking-[0.5px] text-center z-10">
             Comfort with a <span className="italic">View</span>
           </h2>
-          <p className="font-satoshi text-sm lg:text-base text-[#EFF0DE] text-center max-w-[500px] mx-auto z-10">
+          <p className="font-satoshi text-sm md:text-xl lg:text-base text-[#EFF0DE] text-center max-w-2xl mx-auto z-10 font-medium">
             5 spacious rooms with your choice of double or twin beds, each
             complete with a private bathroom. Enjoy exclusive views right from
             your room: the sparkling blue pool, lush green gardens, and stunning
             mountains. Make every moment unforgettable!
           </p>
-          <div className="relative w-full max-w-sm pt-8">
+          <div className="relative w-full max-w-sm md:max-w-lg lg:max-w-xs pt-8 lg:pt-2">
             <div className="overflow-hidden" ref={emblaRef}>
               <div className="flex">
                 {images.map((image, index) => (
@@ -69,7 +69,7 @@ const ComfortSection = () => {
                 <div
                   key={index}
                   onClick={() => emblaApi && emblaApi.scrollTo(index)}
-                  className={`size-3 rounded-full transition-colors duration-300 ${
+                  className={`size-3 lg:size-2 rounded-full transition-colors duration-300 ${
                     index === activeIndex ? "bg-[#FEF9EC]" : "bg-[#FEF9EC]/30"
                   }`}
                   aria-label={`Go to slide ${index + 1}`}
