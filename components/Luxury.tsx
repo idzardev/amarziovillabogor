@@ -3,8 +3,8 @@ import React from "react";
 
 const LuxurySection = () => {
   return (
-    <section className="bg-[#EFF0DE] h-full w-full py-16">
-      <div className="h-full flex items-center max-w-7xl mx-auto px-4 lg:px-0">
+    <section className="h-full w-full py-16">
+      <div className="h-full flex items-center max-w-7xl mx-auto px-8 lg:px-0">
         <div className="flex justify-between md:flex-row flex-col gap-4 items-center">
           <div className="hidden lg:flex justify-start mt-24">
             <Image

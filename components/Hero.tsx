@@ -51,7 +51,7 @@ const HeroSection = () => {
       />
       {/* Static Content - Outside Carousel */}
       <div className="absolute inset-0 z-10 pt-40">
-        <div className="relative px-10 h-screen flex flex-col justify-center max-w-7xl mx-auto">
+        <div className="relative px-8 h-screen flex flex-col justify-center max-w-7xl mx-auto">
           <div className="max-w-2xl space-y-6">
             <h1 className="text-5xl text-center md:text-start font-ppeditorialnew font-thin tracking-[0.5px] text-[#EFF0DE]">
               Welcome to Amarzio Villa

@@ -17,14 +17,18 @@ const GalleryPage = () => {
             and elegance of your next getaway destination
           </p>
         </div>
-        <div>
-          <Image
-            src={`/assets/images/${index + 1}.avif`}
-            alt="comfort"
-            width={1000}
-            height={1000}
-            className="object-cover rounded-sm"
-          />
+        <div className="grid grid-cols-2 gap-2 lg:gap-8 pt-8">
+          {Array.from({ length: 27 }, (_, index) => (
+            <div key={index} className="w-full h-full relative overflow-hidden">
+              <Image
+                src={`/assets/images/galleriesPage/img${index + 1}.avif`}
+                alt="gallery"
+                width={1000}
+                height={1000}
+                className="object-cover rounded-sm hover:scale-110 transition duration-300 ease-in-out"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>

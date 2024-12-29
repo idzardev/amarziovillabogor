@@ -13,7 +13,7 @@ const GallerySection = () => {
   );
   return (
     <section className="bg-[#FBF9EC] h-full w-full py-8">
-      <div className="h-full flex flex-col items-center max-w-7xl mx-auto px-4 lg:px-0 gap-4">
+      <div className="h-full flex flex-col items-center max-w-7xl mx-auto px-8 lg:px-0 gap-4">
         <h2 className="text-4xl lg:text-6xl font-ppeditorialnew font-thin tracking-[0.5px] text-[#43392F]">
           Gallery of <span className="italic">Moments</span>
         </h2>

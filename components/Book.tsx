@@ -11,7 +11,7 @@ const BookSection = () => {
         height={1080}
         className="absolute w-full h-full object-cover z-0"
       />
-      <div className="h-full flex items-center max-w-7xl mx-auto px-4 lg:px-0 py-16">
+      <div className="h-full flex items-center max-w-7xl mx-auto px-8 lg:px-0 py-16">
         <div className="flex flex-col justify-center items-center w-full gap-8">
           <h2 className="font-ppeditorialnew text-4xl lg:text-6xl text-[#43392F] font-thin tracking-[0.5px] z-10">
             Book Your Date Now

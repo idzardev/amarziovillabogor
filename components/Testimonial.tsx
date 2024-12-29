@@ -29,7 +29,7 @@ const TestimonialSection = () => {
         height={1080}
         className="absolute w-full h-full object-cover z-0 mix-blend-multiply opacity-50"
       />
-      <div className="relative h-full flex items-center max-w-7xl mx-auto px-4 lg:px-0 py-16">
+      <div className="relative h-full flex items-center max-w-7xl mx-auto px-8 lg:px-0 py-16">
         <div className="flex flex-col justify-center items-center w-full gap-8">
           <p className="font-satoshi font-medium text-sm lg:text-base text-[#43392F] text-center max-w-[500px] mx-auto z-10">
             {`"The villa was absolutely stunning! The mountain view from the room

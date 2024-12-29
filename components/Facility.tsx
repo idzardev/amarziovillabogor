@@ -15,7 +15,7 @@ import { FacilitiesData } from "@/constants/FacilitiesData";
 const FacilitiesSection = () => {
   return (
     <section className="bg-[#FBF9EC] h-full w-full py-16">
-      <div className="h-full flex items-center max-w-7xl mx-auto px-4 lg:px-0">
+      <div className="h-full flex items-center max-w-7xl mx-auto px-8 lg:px-0">
         <div className="space-y-4 w-full text-center">
           <h2 className="text-4xl lg:text-6xl font-ppeditorialnew font-thin tracking-[0.5px] pt-8">
             Amarzio&apos;s Facilities
@@ -24,7 +24,7 @@ const FacilitiesSection = () => {
             Carefully curated amenities to ensure your stay at Amarzio Villa is
             as comfortable, relaxing, and enjoyable as possible.
           </p>
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 px-10 pt-8">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 px-4 pt-8">
             {FacilitiesData.map((facility) => (
               <Dialog key={facility.id}>
                 <DialogTrigger
