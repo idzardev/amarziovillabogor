@@ -50,7 +50,7 @@ const ContactSection = () => {
                   alt="Map"
                   width={1920}
                   height={1080}
-                  className="object-cover rounded-none"
+                  className="object-cover rounded-none aspect-square w-full"
                 />
               </DialogTrigger>
               <DialogContent className="w-80">

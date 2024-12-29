@@ -5,12 +5,12 @@ import React from "react";
 const FacilitiesPage = () => {
   return (
     <div className="w-full h-full pb-16 pt-28">
-      <div className="flex flex-col gap-4 h-full items-center max-w-7xl mx-auto px-8">
-        <div className="flex flex-col justify-center items-center w-full gap-2 text-center">
+      <div className="flex flex-col gap-4 h-full items-center max-w-7xl mx-auto px-4">
+        <div className="flex flex-col justify-center items-center w-full gap-3 text-center">
           <h6 className="font-ppeditorialnew text-lg text-[#43392F] font-thin tracking-[0.5px]">
             Facilities
           </h6>
-          <h1 className="font-ppeditorialnew text-4xl lg:text-6xl text-[#43392F] font-thin tracking-[0.5px] px-4">
+          <h1 className="font-ppeditorialnew text-4xl lg:text-6xl text-[#43392F] font-thin tracking-[0.5px] px-8 leading-[1.5]">
             Discover the Comforts of Amarzio
           </h1>
           <p className="text-sm lg:text-base font-satoshi font-medium text-[#43392F]">
@@ -33,15 +33,15 @@ const FacilitiesPage = () => {
                       alt={facility.title}
                       width={1000}
                       height={1000}
-                      className="w-full object-cover rounded-sm hover:scale-110 transition duration-300 ease-in-out"
+                      className="w-full object-cover rounded-none hover:scale-110 transition duration-300 ease-in-out"
                     />
                   </div>
 
-                  <div className="flex flex-col gap-4 text-center">
-                    <h3 className="font-ppeditorialnew text-xl lg:text-2xl text-[##43392F] font-thin tracking-[S0.5px]">
+                  <div className="flex flex-col gap-1 text-center px-16">
+                    <h3 className="font-ppeditorialnew text-2xl text-[##43392F] font-thin tracking-[0.5px]">
                       {facility.title}
                     </h3>
-                    <p className="text-sm lg:text-base font-satoshi font-medium px-4">
+                    <p className="text-base font-satoshi font-medium text-[#43392F] tracking-[0.5px]">
                       {facility.description}
                     </p>
                   </div>

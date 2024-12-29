@@ -15,16 +15,16 @@ export const FacilitiesData = [
   },
   {
     id: 3,
-    title: "Outdoor & BBQ Area",
-    description: "Perfect for outdoor meals and barbecues.",
-    image: "/grill.svg",
+    title: "Modern Kitchen",
+    description: "Everything you need to cook your favorite meals.",
+    image: "/knifeandfork.svg",
     picture: "/assets/images/facilitiesPage/img3.avif",
   },
   {
     id: 4,
-    title: "Modern Kitchen",
-    description: "Everything you need to cook your favorite meals.",
-    image: "/knifeandfork.svg",
+    title: "Private Swimming Pool",
+    description: "A refreshing pool all to yourself.",
+    image: "/pool.svg",
     picture: "/assets/images/facilitiesPage/img4.avif",
   },
   {
@@ -36,9 +36,9 @@ export const FacilitiesData = [
   },
   {
     id: 6,
-    title: "Private Swimming Pool",
-    description: "A refreshing pool all to yourself.",
-    image: "/pool.svg",
+    title: "Outdoor & BBQ Area",
+    description: "Perfect for outdoor meals and barbecues.",
+    image: "/grill.svg",
     picture: "/assets/images/facilitiesPage/img6.avif",
   },
   {

@@ -4,7 +4,7 @@ import React from "react";
 const LuxurySection = () => {
   return (
     <section className="h-full w-full py-16">
-      <div className="h-full flex items-center max-w-7xl mx-auto px-8 lg:px-0">
+      <div className="h-full flex items-center max-w-7xl mx-auto px-4 lg:px-0">
         <div className="flex justify-between md:flex-row flex-col gap-4 items-center">
           <div className="hidden lg:flex justify-start mt-24">
             <Image
@@ -19,7 +19,7 @@ const LuxurySection = () => {
             <h2 className="text-4xl lg:text-6xl font-ppeditorialnew font-thin tracking-[0.5px] text-[#43392F]">
               <span className="italic">Luxury</span> in Nature
             </h2>
-            <p className="text-sm lg:text-base font-satoshi font-medium text-[#43392F] leading-relaxed max-w-[500px] mx-auto">
+            <p className="text-sm lg:text-base font-satoshi font-medium text-[#43392F] max-w-[500px] mx-auto tracking-[0.5px]">
               Hidden in the beautiful highlands of Cisarua, Bogor, Amarzio Villa
               is your go-to escape for a mix of cozy comfort and stunning
               mountain views. Just a quick drive from Jakarta, it&apos;s the
@@ -27,12 +27,19 @@ const LuxurySection = () => {
               nature.
             </p>
           </div>
-          <div className="lg:hidden flex justify-center">
+          <div className="flex gap-3 md:hidden pt-12">
             <Image
-              src="/assets/images/luxury/luxurymix.png"
+              src="/assets/images/luxury/luxury2.avif"
               alt="luxury"
-              width={1000}
-              height={1000}
+              width={450}
+              height={400}
+              className="object-cover"
+            />
+            <Image
+              src="/assets/images/luxury/luxury1.avif"
+              alt="luxury"
+              width={450}
+              height={400}
               className="object-cover"
             />
           </div>

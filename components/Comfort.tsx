@@ -64,7 +64,7 @@ const ComfortSection = () => {
                 ))}
               </div>
             </div>
-            <div className="flex justify-center gap-2 mt-4">
+            <div className="flex justify-center gap-2 mt-8">
               {images.map((_, index) => (
                 <div
                   key={index}

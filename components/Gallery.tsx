@@ -56,7 +56,7 @@ const GallerySection = () => {
               ))}
             </div>
           </div>
-          <div className="flex justify-center gap-2 mt-4">
+          <div className="flex justify-center gap-2 mt-8">
             {images.map((_, index) => (
               <div
                 key={index}
@@ -71,7 +71,7 @@ const GallerySection = () => {
         </div>
         <Link
           href="/gallery"
-          className="mt-4 font-satoshi font-medium text-sm bg-[#EFF0DE] text-[#43392F] hover:bg-[#43392F] hover:text-[#EFF0DE] transition-colors duration-300 px-6 py-2.5 rounded flex items-center gap-1.5"
+          className="mt-4 font-satoshi font-medium text-sm bg-[#EFF0DE] text-[#43392F] hover:bg-[#43392F] hover:text-[#EFF0DE] transition-colors duration-300 px-6 py-2.5 rounded-none flex items-center gap-1.5"
         >
           See more <ArrowUpRight className="size-4" />
         </Link>
