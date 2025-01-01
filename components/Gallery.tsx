@@ -30,14 +30,14 @@ const GallerySection = () => {
   return (
     <section className="h-full w-full py-12">
       <div className="h-full flex flex-col items-center max-w-7xl mx-auto px-4 lg:px-0 gap-6">
-        <h2 className="text-4xl lg:text-6xl font-ppeditorialnew font-thin tracking-[0.5px] pt-8">
+        <h2 className="font-ppeditorialnew text-4xl md:text-6xl lg:text-5xl text-[#43392F] font-thin tracking-[0.5px] text-center z-10">
           Gallery of <span className="italic">Moments</span>
         </h2>
         <p className="font-satoshi text-sm md:text-xl lg:text-base text-[#43392F] text-center max-w-2xl mx-auto z-10 font-medium">
           Explore our villa, from cozy interiors to stunning outdoor views. Each
           corner is designed to make your stay unforgettable.
         </p>
-        <div className="relative w-full max-w-sm md:max-w-lg pt-8">
+        <div className="relative w-full max-w-sm md:max-w-lg lg:max-w-xs pt-8 lg:pt-2">
           <div className="overflow-hidden" ref={emblaRef}>
             <div className="flex">
               {images.map((image, index) => (
@@ -61,7 +61,7 @@ const GallerySection = () => {
               <div
                 key={index}
                 onClick={() => emblaApi && emblaApi.scrollTo(index)}
-                className={`size-3 rounded-full transition-colors duration-300 ${
+                className={`size-3 lg:size-2 rounded-full transition-colors duration-300 ${
                   index === activeIndex ? "bg-[#43392F]" : "bg-[#43392F]/30"
                 }`}
                 aria-label={`Go to slide ${index + 1}`}

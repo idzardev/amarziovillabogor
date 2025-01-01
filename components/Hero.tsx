@@ -57,7 +57,7 @@ const HeroSection = () => {
             </div>
             <div className="w-full flex justify-center lg:justify-start pt-8 lg:pt-4">
               <Link
-                href="wa.me/6281936872903"
+                href="https://wa.me/6281936872903"
                 className="bg-[#EFF0DE] hover:bg-[#EFF0DE]/90 text-[#43392F] rounded-none flex items-center font-satoshi font-medium text-base tracking-[0.5px] px-6 py-2 md:text-xl md:px-8 md:py-3 lg:px-6 lg:py-2 lg:text-base"
               >
                 Book Now

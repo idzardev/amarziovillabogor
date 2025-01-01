@@ -73,7 +73,7 @@ const Navbar = () => {
           </span>
         </Link>
         <Link
-          href="/"
+          href="https://wa.me/6281936872903"
           className="gap-2 items-center font-satoshi text-[#EFF0DE] hidden lg:flex"
         >
           <span>BOOK NOW</span>

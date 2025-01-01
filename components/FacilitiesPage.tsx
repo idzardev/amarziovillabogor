@@ -20,10 +20,14 @@ const FacilitiesPage = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-16 py-8">
-          {FacilitiesData.map((facility) => (
+          {FacilitiesData.map((facility, index) => (
             <div
               key={facility.id}
-              className="flex flex-col gap-2 lg:gap-3 pt-8"
+              className={`flex flex-col gap-2 lg:gap-3 pt-8 ${
+                index === 6
+                  ? "md:col-span-2 md:max-w-[380px] md:mx-auto lg:col-start-2 lg:col-span-1"
+                  : ""
+              }`}
             >
               <div className="w-full overflow-hidden">
                 <Image

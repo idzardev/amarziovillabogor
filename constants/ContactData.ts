@@ -3,7 +3,7 @@ export const ContactLinks = [
     name: "WhatsApp",
     title: "+62 819 3687 2903",
     icon: "/phone.svg",
-    link: "wa.me/6281936872903",
+    link: "https://wa.me/6281936872903",
   },
   {
     name: "Email",

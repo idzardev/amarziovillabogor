@@ -14,7 +14,7 @@ import { ContactLinks } from "@/constants/ContactData";
 
 const ContactSection = () => {
   return (
-    <section className="bg-[#FBF9EC] h-full w-full py-16 md:py-0">
+    <section className="bg-[#FBF9EC] h-full w-full pt-16 md:py-0">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-full items-center max-w-7xl mx-auto px-0">
         <div className="flex flex-col justify-center items-center w-full gap-8">
           <h2 className="font-ppeditorialnew text-4xl lg:text-6xl text-[#43392F] font-thin tracking-[0.5px]">

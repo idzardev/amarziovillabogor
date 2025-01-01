@@ -24,8 +24,8 @@ const BookSection = () => {
               <h6 className="font-ppeditorialnew text-2xl lg:text-4xl text-[#EFF0DE] tracking-[0.5px] md:text-start w-full">
                 Ready to escape to paradise?
               </h6>
-              <p className="font-satoshi text-sm md:text-base md:text-start text-[#EFF0DE] text-center max-w-2xl mx-auto z-10 font-medium">
-                our whatsapp booking service makes it easy to inquire, book, and
+              <p className="font-satoshi w-full text-sm md:text-base md:text-start text-[#EFF0DE] text-center max-w-2xl md:max-w-3xl mx-auto z-10 font-medium">
+                Our whatsapp booking service makes it easy to inquire, book, and
                 manage your villa stay.
               </p>
             </div>

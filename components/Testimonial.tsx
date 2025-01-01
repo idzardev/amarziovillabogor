@@ -31,26 +31,20 @@ const TestimonialSection = () => {
       />
       <div className="relative h-full flex items-center max-w-7xl mx-auto px-8 lg:px-0 py-16">
         <div className="flex flex-col justify-center items-center w-full gap-8">
-          <p className="font-satoshi text-sm md:text-xl lg:text-base text-[#43392F] text-center max-w-2xl mx-auto z-10 font-medium">
-            {`"The villa was absolutely stunning! The mountain view from the room
-            was breathtaking, and the pool was so refreshing. Perfect for a
-            weekend getaway. Can't wait to come back!"`}
-          </p>
-
-          <div className="w-full max-w-md relative pt-4">
+          <div className="w-full max-w-md md:max-w-lg lg:max-w-4xl relative">
             <Carousel
               plugins={[plugin.current]}
               className="w-full"
               onMouseEnter={plugin.current.stop}
               onMouseLeave={plugin.current.reset}
             >
-              <CarouselContent className="-ml-2 md:-ml-4">
+              <CarouselContent>
                 {TestimonialData.map((item) => (
-                  <CarouselItem
-                    key={item.id}
-                    className="pl-2 md:pl-4 md:basis-1/3"
-                  >
-                    <div className="flex flex-col items-center gap-2">
+                  <CarouselItem key={item.id}>
+                    <div className="flex flex-col items-center gap-8">
+                      <p className="font-satoshi text-sm md:text-xl lg:text-base text-[#43392F] text-center max-w-2xl mx-auto z-10 font-medium">
+                        {`"${item.description}"`}
+                      </p>
                       <div className="relative size-16 rounded-full overflow-hidden">
                         <Image
                           src={item.image}
@@ -66,8 +60,8 @@ const TestimonialSection = () => {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="flex left-16 md:-left-12 bg-transparent border border-[#43392F] hover:bg-[#43392F] hover:text-[#EFF0DE]" />
-              <CarouselNext className="flex right-16 md:-right-12 bg-transparent border border-[#43392F] hover:bg-[#43392F] hover:text-[#EFF0DE]" />
+              <CarouselPrevious className="flex mt-4 left-12 md:left-36 md:mt-8 lg:left-72 bg-transparent border border-[#43392F] hover:bg-[#43392F] hover:text-[#EFF0DE]" />
+              <CarouselNext className="flex mt-4 right-12 md:right-36 md:mt-8 lg:right-72 bg-transparent border border-[#43392F] hover:bg-[#43392F] hover:text-[#EFF0DE]" />
             </Carousel>
           </div>
         </div>
