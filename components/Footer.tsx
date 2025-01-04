@@ -8,23 +8,21 @@ import React from "react";
 const Footer = () => {
   const pathname = usePathname();
   return (
-    <footer className="bg-[#EFF0DE] h-full w-full py-16">
-      <div className="h-full flex items-center max-w-7xl mx-auto px-4 lg:px-0">
-        <div className="flex flex-col justify-center items-center w-full gap-2">
-          <div className="flex items-center gap-4">
+    <footer className="bg-[#EFF0DE] h-full w-full py-16 lg:pb-0">
+      <div className="h-full flex items-center max-w-7xl mx-auto px-4 lg:px-8">
+        <div className="flex flex-col justify-center items-center w-full gap-6 lg:flex-row lg:justify-between lg:max-w-7xl lg:mx-auto">
+          <div className="flex items-center justify-center gap-4">
             {NavLinks.map((link) => (
               <Link
                 href={link.url}
                 key={link.label}
-                className={`flex flex-col w-full py-2 font-satoshi font-medium tracking-wider text-sm uppercase ${
+                className={`flex flex-col w-full items-center justify-center py-2 font-satoshi font-medium tracking-wider text-sm uppercase ${
                   pathname === link.url
                     ? "text-[#43392F]"
                     : "text-[#BFBFBF] hover:text-[#43392F]"
                 }`}
               >
-                <div className="flex gap-2 items-center">
-                  <p className="pl-4 pb-4">{link.label}</p>
-                </div>
+                <p className="md:px-2 lg:px-4">{link.label}</p>
               </Link>
             ))}
           </div>
@@ -33,6 +31,11 @@ const Footer = () => {
             2024 AMARZIO VILLA. ALL RIGHTS RESERVED
           </p>
         </div>
+      </div>
+      <div className="w-full flex justify-center">
+        <p className="hidden lg:flex text-[150px] font-satoshi font-medium text-[#FBF9EC]">
+          AMARZIO VILLA
+        </p>
       </div>
     </footer>
   );

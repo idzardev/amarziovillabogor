@@ -1,29 +1,39 @@
 "use client";
 
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselApi,
+  CarouselPrevious,
+  CarouselNext,
+} from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import useEmblaCarousel from "embla-carousel-react";
 
 const ComfortSection = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [api, setApi] = React.useState<CarouselApi>();
+  const [current, setCurrent] = React.useState(0);
 
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
-    Autoplay({ delay: 2500, stopOnInteraction: true }),
-  ]);
-
-  React.useEffect(() => {
-    if (emblaApi) {
-      emblaApi.on("select", () => {
-        setActiveIndex(emblaApi.selectedScrollSnap());
-      });
-    }
-  }, [emblaApi]);
+  const plugin = React.useRef(
+    Autoplay({ delay: 2500, stopOnInteraction: true })
+  );
 
   const images = Array.from({ length: 5 }).map((_, index) => ({
     src: `/assets/images/comfort/comfort${index + 1}.avif`,
     alt: `Comfort image ${index + 1}`,
   }));
+
+  React.useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap());
+    });
+  }, [api]);
 
   return (
     <section className="bg-[#183621] h-screen w-full">
@@ -45,32 +55,40 @@ const ComfortSection = () => {
             your room: the sparkling blue pool, lush green gardens, and stunning
             mountains. Make every moment unforgettable!
           </p>
-          <div className="relative w-full max-w-sm md:max-w-lg lg:max-w-xs pt-8 lg:pt-2">
-            <div className="overflow-hidden" ref={emblaRef}>
-              <div className="flex">
+          <div className="relative w-full max-w-sm md:max-w-lg lg:max-w-4xl pt-8 lg:pt-8">
+            <Carousel
+              setApi={setApi}
+              plugins={[plugin.current]}
+              className="w-full"
+            >
+              <CarouselContent className="-ml-4">
                 {images.map((image, index) => (
-                  <div
+                  <CarouselItem
                     key={index}
-                    className="flex-[0_0_100%] min-w-0 relative aspect-[1/1]"
+                    className="pl-4 basis-full lg:basis-1/3"
                   >
-                    <Image
-                      src={image.src}
-                      alt={image.alt}
-                      width={400}
-                      height={400}
-                      className="object-cover w-full h-full"
-                    />
-                  </div>
+                    <div className="relative aspect-[1/1]">
+                      <Image
+                        src={image.src}
+                        alt={image.alt}
+                        width={1000}
+                        height={1000}
+                        className="object-cover w-full h-full"
+                      />
+                    </div>
+                  </CarouselItem>
                 ))}
-              </div>
-            </div>
-            <div className="flex justify-center gap-2 mt-8">
+              </CarouselContent>
+              <CarouselPrevious className="bg-transparent text-[#FEF9EC] hidden lg:flex lg:-ml-8" />
+              <CarouselNext className="bg-transparent text-[#FEF9EC] hidden lg:flex lg:-mr-8" />
+            </Carousel>
+            <div className="flex justify-center gap-2 mt-8 lg:hidden">
               {images.map((_, index) => (
                 <div
                   key={index}
-                  onClick={() => emblaApi && emblaApi.scrollTo(index)}
+                  onClick={() => api?.scrollTo(index)}
                   className={`size-3 lg:size-2 rounded-full transition-colors duration-300 ${
-                    index === activeIndex ? "bg-[#FEF9EC]" : "bg-[#FEF9EC]/30"
+                    index === current ? "bg-[#FEF9EC]" : "bg-[#FEF9EC]/30"
                   }`}
                   aria-label={`Go to slide ${index + 1}`}
                 />

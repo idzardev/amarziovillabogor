@@ -54,7 +54,7 @@ const ContactSection = () => {
                 className="object-cover rounded-none aspect-square w-full"
               />
             </DialogTrigger>
-            <DialogContent className="w-80">
+            <DialogContent className="w-80 md:w-96">
               <DialogHeader>
                 <DialogTitle className="flex items-center gap-1 justify-center">
                   <Image

@@ -10,6 +10,9 @@ export default {
   ],
   theme: {
     extend: {
+      aspectRatio: {
+        "3/4": "3 / 4",
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
