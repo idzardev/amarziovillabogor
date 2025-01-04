@@ -8,9 +8,9 @@ import React from "react";
 const Footer = () => {
   const pathname = usePathname();
   return (
-    <footer className="bg-[#EFF0DE] h-full w-full py-16 lg:pb-0">
+    <footer className="bg-[#EFF0DE] h-full w-full py-16 md:pb-3 lg:pb-6">
       <div className="h-full flex items-center max-w-7xl mx-auto px-4 lg:px-8">
-        <div className="flex flex-col justify-center items-center w-full gap-6 lg:flex-row lg:justify-between lg:max-w-7xl lg:mx-auto">
+        <div className="flex flex-col justify-center items-center w-full gap-3 lg:flex-row lg:justify-between lg:max-w-7xl lg:mx-auto">
           <div className="flex items-center justify-center gap-4">
             {NavLinks.map((link) => (
               <Link
@@ -32,8 +32,8 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="w-full flex justify-center">
-        <p className="hidden lg:flex text-[150px] font-satoshi font-medium text-[#FBF9EC]">
+      <div className="w-full flex justify-center md:pt-4">
+        <p className="hidden md:flex md:text-8xl lg:text-[150px] font-satoshi font-medium text-[#FBF9EC]">
           AMARZIO VILLA
         </p>
       </div>
