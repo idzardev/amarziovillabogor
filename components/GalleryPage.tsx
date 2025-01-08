@@ -13,7 +13,7 @@ const GalleryPage = () => {
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
   const modalRef = useRef<HTMLDivElement>(null);
 
-  const totalImages = 36;
+  const totalImages = 38;
   const initialDisplay = 8;
   const remainingCount = totalImages - initialDisplay;
   const displayedImages = showAll ? totalImages : initialDisplay;

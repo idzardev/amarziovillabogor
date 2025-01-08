@@ -20,7 +20,7 @@ const ComfortSection = () => {
     Autoplay({ delay: 2500, stopOnInteraction: true })
   );
 
-  const images = Array.from({ length: 5 }).map((_, index) => ({
+  const images = Array.from({ length: 6 }).map((_, index) => ({
     src: `/assets/images/comfort/comfort${index + 1}.avif`,
     alt: `Comfort image ${index + 1}`,
   }));

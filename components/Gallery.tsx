@@ -30,7 +30,7 @@ const GallerySection = () => {
     });
   }, [api]);
 
-  const images = Array.from({ length: 10 }).map((_, index) => ({
+  const images = Array.from({ length: 11 }).map((_, index) => ({
     src: `/assets/images/gallery/gallery${index + 1}.avif`,
     alt: `Gallery image ${index + 1}`,
   }));
