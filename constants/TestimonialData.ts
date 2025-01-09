@@ -1,51 +1,37 @@
 export const TestimonialData = [
   {
     id: 1,
-    name: "Carla Greene",
+    name: "Rianty Alviyustari",
     image: "/assets/images/testimonial/pp1.avif",
     description:
-      "Our stay was incredible! The serene beachfront view from the balcony was unforgettable, and the private pool made it even more special. Truly a paradise retreat!",
+      "Villanya kereen bgt... Bersih nyaman... Rekomend pisan nginep d sini.. Yuk yg mw liburan ke villa amarzio aja y guys😍😍😍",
   },
   {
     id: 2,
-    name: "Stevfy Johnson",
+    name: "Nova Suryantika",
     image: "/assets/images/testimonial/pp2.avif",
     description:
-      "The cabin exceeded all our expectations. Cozy interiors, a fireplace, and the surrounding forest made it the ultimate escape. We'll definitely return!",
+      "Villa nya nyaman  .. wajib coba deh nginap dsini cocok untuk bawa keluarga dan anak2 .. viewnya juga Okee 😍😍",
   },
   {
     id: 3,
-    name: "Xiyancing Wang",
+    name: "Rani Noviani",
     image: "/assets/images/testimonial/pp3.avif",
     description:
-      "Such a delightful experience! The modern amenities paired with the rustic charm of the property made it a dream come true. Highly recommended!",
+      "Villa amarzio mantap,bersih,keren,pemandangan indah sejuk ,, bawa keluarga berlibur k sini di jamin betah 😁🥰🤗",
   },
   {
     id: 4,
-    name: "Robert Smith",
+    name: "Wey Nyill",
     image: "/assets/images/testimonial/pp4.avif",
     description:
-      "Absolutely loved this place! The sunrise over the lake was mesmerizing, and the peaceful ambiance was just what we needed. A must-visit!",
+      "Cocok untuk keluarga atau sama temen view nyah keren kapasitas lengkap dan tempat nyah nyaman bangatt villa amarzio",
   },
   {
     id: 5,
-    name: "Jenny Doe",
+    name: "Hamim Syahputra",
     image: "/assets/images/testimonial/pp5.avif",
     description:
-      "A fantastic getaway destination! The villa's spacious rooms and scenic garden views created the perfect holiday mood. Can't wait to visit again!",
-  },
-  {
-    id: 6,
-    name: "Greece Rey",
-    image: "/assets/images/testimonial/pp6.avif",
-    description:
-      "This was a magical retreat! The luxurious spa and picturesque hills surrounding the resort were simply enchanting. A stay to remember!",
-  },
-  {
-    id: 7,
-    name: "Jhuang Li",
-    image: "/assets/images/testimonial/pp7.avif",
-    description:
-      "An amazing hideaway! The cozy rooms, the charming decor, and the spectacular valley views made this trip unforgettable. We'll be back soon!",
+      "Villa Amarzio bagus sekali, bersi, nyaman, luasss, cocok buwat liburan keluarga ni. Mantabsss!",
   },
 ];

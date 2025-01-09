@@ -42,7 +42,7 @@ const TestimonialSection = () => {
                 {TestimonialData.map((item) => (
                   <CarouselItem key={item.id}>
                     <div className="flex flex-col items-center gap-8">
-                      <p className="font-satoshi text-sm md:text-xl lg:text-base text-[#43392F] text-center max-w-2xl mx-auto z-10 font-medium">
+                      <p className="font-satoshi text-sm md:text-xl lg:text-base text-[#43392F] text-center max-w-2xl mx-auto z-10 font-medium line-clamp-3">
                         {`"${item.description}"`}
                       </p>
                       <div className="relative size-16 rounded-full overflow-hidden">
