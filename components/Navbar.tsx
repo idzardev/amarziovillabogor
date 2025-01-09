@@ -45,11 +45,11 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full top-0 left-0 right-0 z-50 px-4 md:px-8 py-6 flex justify-between items-center transition-colors duration-300 ease-in-out ${
+      className={`fixed w-full top-0 left-0 right-0 z-50 px-4 md:px-8 py-6 flex items-center transition-colors duration-300 ease-in-out justify-between ${
         hasScrolled ? "bg-[#0B3121]" : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl w-full flex items-center justify-between mx-auto px-4 md:px-0 z-[100]">
+      <div className="max-w-7xl w-full flex items-center lg:justify-between mx-auto px-4 md:px-0 z-[100]">
         <div className="flex gap-4 max-lg:hidden">
           {NavLinks.map((link) => (
             <Link
@@ -67,7 +67,10 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
-        <Link href="/">
+        <Link
+          href="/"
+          className="w-full flex items-center justify-center lg:w-auto"
+        >
           <span className="text-[#EFF0DE] text-base font-extralight tracking-[3px] lg:text-4xl font-ppeditorialnew lg:pr-20">
             AMARZIO VILLA
           </span>
